@@ -1,0 +1,15 @@
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Zoo.Tests.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Zoo.Tests.pdb
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Zoo.exe
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Zoo.pdb
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Zoo.exe.config
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\obj\Debug\Zoo.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\obj\Debug\Zoo.Tests.dll
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo.Tests\obj\Debug\Zoo.Tests.pdb
