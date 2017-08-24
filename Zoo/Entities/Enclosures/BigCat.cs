@@ -15,7 +15,7 @@ namespace Zoo.Entities.Enclosures
             if (animal is IPredator)
             {
                 animals.Add(animal);
-                Console.WriteLine(animal.getName() + " the tiger has been Added to the enclosure!");
+                Console.WriteLine(animal.GetName() + " the tiger has been Added to the enclosure!");
             }
             else
             {

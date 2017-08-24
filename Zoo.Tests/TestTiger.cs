@@ -10,37 +10,37 @@ namespace Zoo.Tests
         Tiger tiger;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             tiger = new Tiger("Tony", 8);
         }
 
         [TestMethod]
-        public void testRoar()
+        public void TestRoar()
         {
-            Assert.AreEqual("Roooaaar", tiger.roar());
+            Assert.AreEqual("Roooaaar", tiger.Roar());
         }
 
         [TestMethod]
-        public void testHunt()
+        public void TestHunt()
         {
-            Assert.AreEqual("I am a hunter", tiger.hunt());
+            Assert.AreEqual("I am a hunter", tiger.Hunt());
         }
 
         [TestMethod]
-        public void testCanEatSteak()
+        public void TestCanEatSteak()
         {
             Steak steak = new Steak();
-            tiger.eat(steak);
-            Assert.AreEqual(1, tiger.foodCount());
+            tiger.Eat(steak);
+            Assert.AreEqual(1, tiger.FoodCount());
         }
 
         [TestMethod]
-        public void testCantEatSeeds()
+        public void TestCantEatSeeds()
         {
             Seeds seeds = new Seeds();
-            tiger.eat(seeds);
-            Assert.AreEqual(0, tiger.foodCount());
+            tiger.Eat(seeds);
+            Assert.AreEqual(0, tiger.FoodCount());
         }
     }
 }

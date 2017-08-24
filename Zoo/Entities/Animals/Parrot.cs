@@ -10,17 +10,17 @@ namespace Zoo.Entities.Animals
         {
         }
 
-        public string fly()
+        public string Fly()
         {
             return "I can fly!";
         }
 
-        public string talk()
+        public string Talk()
         {
             return "I can talk!";
         }
 
-        public override void eat(IEdible food)
+        public override void Eat(IEdible food)
         {
             if (food is IFruit)
             {

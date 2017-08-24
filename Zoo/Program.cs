@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Zoo.Entities.Animals;
 using Zoo.Entities.Enclosures;
 using Zoo.Entities.Foods;
@@ -136,28 +133,28 @@ namespace Zoo
                         {
 
                             case 1:
-                                List<Animal> tigers = tigerEnclosure.getAnimals();
+                                List<Animal> tigers = tigerEnclosure.GetAnimals();
                                 foreach (Animal tiger1 in tigers)
                                 {
-                                    Console.WriteLine(tiger1.getName());
+                                    Console.WriteLine(tiger1.GetName());
                                 }
 
                                 break;
 
                             case 2:
-                                List<Animal> clownFish = clownfishEnclosure.getAnimals();
+                                List<Animal> clownFish = clownfishEnclosure.GetAnimals();
                                 foreach (Animal clownfish1 in clownFish)
                                 {
-                                    Console.WriteLine(clownfish1.getName());
+                                    Console.WriteLine(clownfish1.GetName());
                                 }
 
                                 break;
 
                             case 3:
-                                List<Animal> parrots = parrotEnclosure.getAnimals();
+                                List<Animal> parrots = parrotEnclosure.GetAnimals();
                                 foreach (Animal parrot1 in parrots)
                                 {
-                                    Console.WriteLine(parrot1.getName());
+                                    Console.WriteLine(parrot1.GetName());
                                 }
                                 break;
                         }
@@ -176,15 +173,15 @@ namespace Zoo
                         switch (option)
                         {
                             case 1:
-                                tiger.eat(steak);
+                                tiger.Eat(steak);
                                 break;
 
                             case 2:
-                                clownfish.eat(algae);
+                                clownfish.Eat(algae);
                                 break;
 
                             case 3:
-                                parrot.eat(seeds);
+                                parrot.Eat(seeds);
                                 break;
                         }
 

@@ -12,7 +12,7 @@ namespace Zoo.Entities.Animals
         protected List<IEdible> belly;
 
         //No default implementation.
-        public abstract void eat(IEdible food);
+        public abstract void Eat(IEdible food);
 
         public Animal(string name, int age)
         {
@@ -21,38 +21,38 @@ namespace Zoo.Entities.Animals
             this.belly = new List<IEdible>();
         }
 
-        public string getName()
+        public string GetName()
         {
             return name;
         }
 
-        public void setName(string name)
+        public void SetName(string name)
         {
             this.name = name;
         }
 
-        public int getAge()
+        public int GetAge()
         {
             return age;
         }
 
-        public void setAge(int age)
+        public void SetAge(int age)
         {
             this.age = age;
         }
 
         //make method virtual in order for subclasses to be able to override - default implementation
-        public virtual string breathe()
+        public virtual string Breathe()
         {
             return "I can breathe";
         }
 
-        public int foodCount()
+        public int FoodCount()
         {
             return belly.Count;
         }
 
-        public void poop()
+        public void Poop()
         {
             belly.Clear();
         }

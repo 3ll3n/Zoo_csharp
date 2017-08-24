@@ -11,22 +11,22 @@ namespace Zoo.Entities.Animals
         {
         }
 
-        public string swim()
+        public string Swim()
         {
             return "I live in the water and love to swim!";
         }
 
-        public override string breathe()
+        public override string Breathe()
         {
             return "I can breathe under water!";
         }
 
-        public string blowBubbles()
+        public string BlowBubbles()
         {
             return "I can blow bubbles!";
         }
 
-        public override void eat(IEdible food)
+        public override void Eat(IEdible food)
         {
             if (food is IPlant)
             {

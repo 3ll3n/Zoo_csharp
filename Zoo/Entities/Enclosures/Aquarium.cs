@@ -15,7 +15,7 @@ namespace Zoo.Entities.Enclosures
             if (animal is ISwim)
             {
                 animals.Add(animal);
-                Console.WriteLine(animal.getName() + " the clownfish has been Added to the Aquarium!");
+                Console.WriteLine(animal.GetName() + " the clownfish has been Added to the Aquarium!");
 
             }
             else

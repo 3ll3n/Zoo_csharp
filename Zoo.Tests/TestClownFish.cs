@@ -10,43 +10,43 @@ namespace Zoo.Tests
         ClownFish clownfish;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             clownfish = new ClownFish("Nemo", 2);
         }
 
         [TestMethod]
-        public void testSwim()
+        public void TestSwim()
         {
-            Assert.AreEqual("I live in the water and love to swim!", clownfish.swim());
+            Assert.AreEqual("I live in the water and love to swim!", clownfish.Swim());
         }
 
         [TestMethod]
-        public void testBreathe()
+        public void TestBreathe()
         {
-            Assert.AreEqual("I can breathe under water!", clownfish.breathe());
+            Assert.AreEqual("I can breathe under water!", clownfish.Breathe());
         }
 
         [TestMethod]
-        public void testBlowBubbles()
+        public void TestBlowBubbles()
         {
-            Assert.AreEqual("I can blow bubbles!", clownfish.blowBubbles());
+            Assert.AreEqual("I can blow bubbles!", clownfish.BlowBubbles());
         }
 
         [TestMethod]
-        public void testCanEatAlgae()
+        public void TestCanEatAlgae()
         {
             Algae algae = new Algae();
-            clownfish.eat(algae);
-            Assert.AreEqual(1, clownfish.foodCount());
+            clownfish.Eat(algae);
+            Assert.AreEqual(1, clownfish.FoodCount());
         }
 
         [TestMethod]
-        public void testCantEatSteak()
+        public void TestCantEatSteak()
         {
             Steak steak = new Steak();
-            clownfish.eat(steak);
-            Assert.AreEqual(0, clownfish.foodCount());
+            clownfish.Eat(steak);
+            Assert.AreEqual(0, clownfish.FoodCount());
         }
     }
 }

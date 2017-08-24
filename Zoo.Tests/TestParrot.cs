@@ -10,37 +10,37 @@ namespace Zoo.Tests
         Parrot parrot;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             parrot = new Parrot("Polymorphism", 20);
         }
 
         [TestMethod]
-        public void testFly()
+        public void TestFly()
         {
-            Assert.AreEqual("I can fly!", parrot.fly());
+            Assert.AreEqual("I can fly!", parrot.Fly());
         }
 
         [TestMethod]
         public void testTalk()
         {
-            Assert.AreEqual("I can talk!", parrot.talk());
+            Assert.AreEqual("I can talk!", parrot.Talk());
         }
 
         [TestMethod]
-        public void testCanEatSeeds()
+        public void TestCanEatSeeds()
         {
             Seeds seeds = new Seeds();
-            parrot.eat(seeds);
-            Assert.AreEqual(1, parrot.foodCount());
+            parrot.Eat(seeds);
+            Assert.AreEqual(1, parrot.FoodCount());
         }
 
         [TestMethod]
-        public void testCantEatAlgae()
+        public void TestCantEatAlgae()
         {
             Algae algae = new Algae();
-            parrot.eat(algae);
-            Assert.AreEqual(0, parrot.foodCount());
+            parrot.Eat(algae);
+            Assert.AreEqual(0, parrot.FoodCount());
         }
     }
 }

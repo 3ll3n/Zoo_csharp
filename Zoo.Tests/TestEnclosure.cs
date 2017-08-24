@@ -9,12 +9,11 @@ namespace Zoo.Tests
     public class TestEnclosure
     {
         Enclosure enclosure;
-
         Tiger tiger;
         Parrot parrot;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             enclosure = new BigCat("Big Cats");
             tiger = new Tiger("Tony", 8);
@@ -22,36 +21,36 @@ namespace Zoo.Tests
         }
 
         [TestMethod]
-        public void testGetName()
+        public void TestGetName()
         {
-            Assert.AreEqual("Big Cats", enclosure.getName());
+            Assert.AreEqual("Big Cats", enclosure.GetName());
         }
 
         [TestMethod]
-        public void testGetAnimals()
+        public void TestGetAnimals()
         {
             enclosure.AddAnimal(new Tiger("Timmy", 8));
             enclosure.AddAnimal(new Tiger("Theresa", 8));
-            Assert.AreEqual(2, enclosure.getNumberOfAnimals());
+            Assert.AreEqual(2, enclosure.GetNumberOfAnimals());
         }
 
         [TestMethod]
-        public void testNumberOfAnimals()
+        public void TestNumberOfAnimals()
         {
             enclosure.AddAnimal(tiger);
-            Assert.AreEqual(1, enclosure.getNumberOfAnimals());
+            Assert.AreEqual(1, enclosure.GetNumberOfAnimals());
         }
 
         [TestMethod]
-        public void testRemoveAnimal()
+        public void TestRemoveAnimal()
         {
             enclosure.AddAnimal(tiger);
-            enclosure.removeAnimal(tiger);
-            Assert.AreEqual(0, enclosure.getNumberOfAnimals());
+            enclosure.RemoveAnimal(tiger);
+            Assert.AreEqual(0, enclosure.GetNumberOfAnimals());
         }
 
         [TestMethod]
-        public void testFeedAnimal()
+        public void TestFeedAnimal()
         {
             Steak steak = new Steak();
             enclosure.AddAnimal(tiger);
@@ -59,10 +58,10 @@ namespace Zoo.Tests
             Tiger tiger2 = new Tiger("Fluffy", 22);
 
             enclosure.AddAnimal(tiger2);
-            enclosure.feedAnimals(steak);
+            enclosure.FeedAnimals(steak);
 
-            Assert.AreEqual(1, tiger.foodCount());
-            Assert.AreEqual(1, tiger2.foodCount());
+            Assert.AreEqual(1, tiger.FoodCount());
+            Assert.AreEqual(1, tiger2.FoodCount());
         }
     }
 }

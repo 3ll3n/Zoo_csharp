@@ -11,7 +11,7 @@ namespace Zoo.Tests
         Enclosure enclosure2;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             zoo = new Zoo.Entities.Zoo("Animal Sanctuary");
             enclosure1 = new BigCat("Big Cats");
@@ -19,18 +19,18 @@ namespace Zoo.Tests
         }
 
         [TestMethod]
-        public void testAddEnclosure()
+        public void TestAddEnclosure()
         {
             zoo.AddEnclosure(enclosure1);
-            Assert.AreEqual(1, zoo.getNumberOfEnclosures());
+            Assert.AreEqual(1, zoo.GetNumberOfEnclosures());
         }
 
         [TestMethod]
-        public void testNumberOfEnclosures()
+        public void TestNumberOfEnclosures()
         {
             zoo.AddEnclosure(enclosure1);
             zoo.AddEnclosure(enclosure2);
-            Assert.AreEqual(2, zoo.getNumberOfEnclosures());
+            Assert.AreEqual(2, zoo.GetNumberOfEnclosures());
         }
     }
 }

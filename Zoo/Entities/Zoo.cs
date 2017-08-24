@@ -20,7 +20,7 @@ namespace Zoo.Entities
             this.enclosures.Add(enclosure);
         }
 
-        public int getNumberOfEnclosures()
+        public int GetNumberOfEnclosures()
         {
             return enclosures.Count;
         }

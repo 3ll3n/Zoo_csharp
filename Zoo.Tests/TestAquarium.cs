@@ -12,7 +12,7 @@ namespace Zoo.Tests
         Animal tiger;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             aquarium = new Aquarium("Aquarium");
             clownfish = new ClownFish("Flounder", 7);
@@ -20,17 +20,17 @@ namespace Zoo.Tests
         }
 
         [TestMethod]
-        public void testAddAnimal()
+        public void TestAddAnimal()
         {
             aquarium.AddAnimal(clownfish);
-            Assert.AreEqual(1, aquarium.getNumberOfAnimals());
+            Assert.AreEqual(1, aquarium.GetNumberOfAnimals());
         }
 
         [TestMethod]
-        public void testCantAddWrongAnimal()
+        public void TestCantAddWrongAnimal()
         {
             aquarium.AddAnimal(tiger);
-            Assert.AreEqual(0, aquarium.getNumberOfAnimals());
+            Assert.AreEqual(0, aquarium.GetNumberOfAnimals());
         }
     }
 }

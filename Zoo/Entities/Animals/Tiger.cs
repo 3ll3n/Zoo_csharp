@@ -11,17 +11,17 @@ namespace Zoo.Entities.Animals
 
         }
 
-        public string roar()
+        public string Roar()
         {
             return "Roooaaar";
         }
 
-        public string hunt()
+        public string Hunt()
         {
             return "I am a hunter";
         }
 
-        public override void eat(IEdible food)
+        public override void Eat(IEdible food)
         {
             if (food is IMeat)
             {

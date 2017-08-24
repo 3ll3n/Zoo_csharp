@@ -4,3 +4,4 @@ C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo\bin\Debug\Zoo.exe
 C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo\bin\Debug\Zoo.pdb
 C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo\obj\Debug\Zoo.exe
 C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo\obj\Debug\Zoo.pdb
+C:\Users\ellen\Documents\CodeClan\ZooProject_csharp\Zoo\obj\Debug\Zoo.csproj.CoreCompileInputs.cache

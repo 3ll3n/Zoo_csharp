@@ -16,7 +16,7 @@ namespace Zoo.Entities.Enclosures
             if (animal is IFly)
             {
                 animals.Add(animal);
-                Console.WriteLine(animal.getName() + " the parrot has been Added to the Aviary!");
+                Console.WriteLine(animal.GetName() + " the parrot has been Added to the Aviary!");
 
             }
             else

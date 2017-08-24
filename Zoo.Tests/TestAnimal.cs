@@ -12,7 +12,7 @@ namespace Zoo.Tests
         Parrot parrot;
 
         [TestInitialize]
-        public void before()
+        public void Init()
         {
             tiger = new Tiger("Tony", 8);
             clownfish = new ClownFish("Nemo", 2);
@@ -20,51 +20,51 @@ namespace Zoo.Tests
         }
 
         [TestMethod]
-        public void testGetName()
+        public void TestGetName()
         {
-            Assert.AreEqual("Tony", tiger.getName());
+            Assert.AreEqual("Tony", tiger.GetName());
         }
 
         [TestMethod]
-        public void testCanSetName()
+        public void TestCanSetName()
         {
-            tiger.setName("Khan");
-            Assert.AreEqual("Khan", tiger.getName());
+            tiger.SetName("Khan");
+            Assert.AreEqual("Khan", tiger.GetName());
         }
 
         [TestMethod]
-        public void testGetAge()
+        public void TestGetAge()
         {
-            Assert.AreEqual(8, tiger.getAge());
+            Assert.AreEqual(8, tiger.GetAge());
         }
 
         [TestMethod]
-        public void testSetAge()
+        public void TestSetAge()
         {
-            tiger.setAge(5);
-            Assert.AreEqual(5, tiger.getAge());
+            tiger.SetAge(5);
+            Assert.AreEqual(5, tiger.GetAge());
         }
 
         [TestMethod]
-        public void testBreathe()
+        public void TestBreathe()
         {
-            Assert.AreEqual("I can breathe", tiger.breathe());
+            Assert.AreEqual("I can breathe", tiger.Breathe());
         }
 
 
         [TestMethod]
-        public void testBellyEmpty()
+        public void TestBellyEmpty()
         {
-            Assert.AreEqual(0, tiger.foodCount());
+            Assert.AreEqual(0, tiger.FoodCount());
         }
 
         [TestMethod]
-        public void testPoop()
+        public void TestPoop()
         {
             Seeds seeds = new Seeds();
-            parrot.eat(seeds);
-            parrot.poop();
-            Assert.AreEqual(parrot.foodCount(), 0);
+            parrot.Eat(seeds);
+            parrot.Poop();
+            Assert.AreEqual(parrot.FoodCount(), 0);
         }
     }
 }

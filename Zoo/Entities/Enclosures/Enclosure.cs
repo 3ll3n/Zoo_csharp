@@ -18,31 +18,31 @@ namespace Zoo.Entities.Enclosures
             this.animals = new List<Animal>();
         }
 
-        public string getName()
+        public string GetName()
         {
             return name;
         }
 
-        public List<Animal> getAnimals()
+        public List<Animal> GetAnimals()
         {
             return animals;
         }
 
-        public int getNumberOfAnimals()
+        public int GetNumberOfAnimals()
         {
             return animals.Count;
         }
 
-        public void removeAnimal(Animal animal)
+        public void RemoveAnimal(Animal animal)
         {
             animals.Remove(animal);
         }
 
-        public void feedAnimals(IEdible food)
+        public void FeedAnimals(IEdible food)
         {
             foreach (Animal animal in animals)
             {
-                animal.eat(food);
+                animal.Eat(food);
             }
         }
     }
